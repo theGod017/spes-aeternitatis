@@ -7,33 +7,55 @@
     <style>
         /* Estilos para a barra de navegação */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Goudy Bookletter 1911', serif;
             margin: 0;
             padding: 0;
+            background-color: #f2e9d4; /* Cor de fundo estilo pergaminho */
+            background-image: url('background_texture.jpg'); /* Textura de fundo estilo papel envelhecido */
+            background-size: cover;
+            background-blend-mode: multiply;
         }
 
         nav {
-            background-color: #333;
+            background-color: #613613; /* Cor de fundo da barra de navegação */
             overflow: hidden;
             text-align: center; /* Centraliza os elementos */
+            padding: 10px 0;
         }
 
         nav a {
             display: inline-block; /* Permite centralizar */
-            color: white;
+            color: #f2e9d4; /* Cor do texto dos links */
             text-align: center;
             padding: 14px 20px;
             text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase; /* Transforma o texto em maiúsculas */
+            margin: 0 10px; /* Espaçamento entre os links */
+            border-radius: 5px; /* Borda arredondada */
         }
 
         nav a:hover {
-            background-color: #ddd;
-            color: black;
+            background-color: #fff; /* Cor de fundo ao passar o mouse */
+            color: #613613; /* Cor do texto ao passar o mouse */
         }
 
         /* Estilos para as seções dos personagens */
         .character-section {
             padding: 20px;
+            background-color: #fff; /* Cor de fundo das seções dos personagens */
+            margin: 20px auto; /* Centraliza as seções na página */
+            max-width: 800px; /* Largura máxima das seções */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
+            border-radius: 10px; /* Borda arredondada */
+        }
+
+        .character-section h2 {
+            color: #613613; /* Cor do título dos personagens */
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 20px;
         }
 
         .character-section img {
@@ -47,8 +69,25 @@
             margin-bottom: 20px;
         }
 
+        .character-info p {
+            color: #613613; /* Cor do texto das informações dos personagens */
+            font-size: 18px;
+        }
+
         .character-description {
             clear: both;
+        }
+
+        .character-description h3 {
+            color: #613613; /* Cor dos títulos das habilidades */
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .character-description p {
+            color: #333; /* Cor do texto das habilidades */
+            font-size: 16px;
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -61,77 +100,79 @@
         <a href="#npcs">NPCs</a>
     </nav>
 
-<div style="padding:20px">
-    <h1>SPES AETERNITATIS</h1>
-    <p>SPES AETERNITATIS é um RPG de aventura emocionante que traduzido do latim clássico significa “a esperança da eternidade”. Este livro será seu guia para explorar um mundo de fantasia repleto de magia, segredos, desafios épicos e muita zueira. Aqui, você criará personagens e moldará histórias incríveis e cenários conforme sua esquizofrenia mandar. Seja você um veterano ou um iniciante, prepare-se para uma jornada inesquecível. Eu sou o mestre, você é muito bem-vindo. Vire a página e comece sua aventura em SPES AETERNITATIS!</p>
-</div>
-<!-- Seção do Xamã Elemental -->
-<div id="personagens" class="character-section">
-    <h2>Xamã Elemental</h2>
-    <div class="character-info">
-        <img src="./xamã.png" alt="Xamã Elemental">
-        <p><strong>Ouro:</strong> 1000</p>
-        <p><strong>Fama:</strong> 500</p>
+    <div style="padding:20px">
+        <h1 style="color: #613613; text-align: center;">SPES AETERNITATIS</h1>
+        <p style="color: #333; font-size: 18px; text-align: justify;">SPES AETERNITATIS é um RPG de aventura emocionante que traduzido do latim clássico significa “a esperança da eternidade”. Este livro será seu guia para explorar um mundo de fantasia repleto de magia, segredos, desafios épicos e muita zueira. Aqui, você criará personagens e moldará histórias incríveis e cenários conforme sua esquizofrenia mandar. Seja você um veterano ou um iniciante, prepare-se para uma jornada inesquecível. Eu sou o mestre, você é muito bem-vindo. Vire a página e comece sua aventura em SPES AETERNITATIS!</p>
     </div>
-    <div class="character-description">
-        <h3>Descrição:</h3>
-        <p>O Xamã Elemental é um mestre das forças da natureza, capaz de canalizar os elementos para conjurar poderosas magias.</p>
-        <h3>Habilidades:</h3>
-        <p><strong>Passiva:</strong> Aura Elemental - Aumenta a resistência mágica de todos os aliados em 20%.</p>
-        <p><strong>Ativa:</strong> Tempestade Furiosa - Invoca uma tempestade de relâmpagos que causa dano a todos os inimigos.</p>
-    </div>
-</div>
 
-<!-- Seção do Assassino -->
-<div class="character-section">
-    <h2>Assassino</h2>
-    <div class="character-info">
-        <img src="./assassino.png" alt="Assassino">
-        <p><strong>Ouro:</strong> 800</p>
-        <p><strong>Fama:</strong> 300</p>
+    <!-- Seção do Xamã Elemental -->
+    <div id="personagens" class="character-section">
+        <h2>Xamã Elemental</h2>
+        <div class="character-info">
+            <img src="./xamã.png" alt="Xamã Elemental">
+            <p><strong>Ouro:</strong> 1000</p>
+            <p><strong>Fama:</strong> 500</p>
+        </div>
+        <div class="character-description">
+            <h3>Descrição:</h3>
+            <p>O Xamã Elemental é um mestre das forças da natureza, capaz de canalizar os elementos para conjurar poderosas magias.</p>
+            <h3>Habilidades:</h3>
+            <p><strong>Passiva:</strong> Aura Elemental - Aumenta a resistência mágica de todos os aliados em 20%.</p>
+            <p><strong>Ativa:</strong> Tempestade Furiosa - Invoca uma tempestade de relâmpagos que causa dano a todos os inimigos.</p>
+        </div>
     </div>
-    <div class="character-description">
-        <h3>Descrição:</h3>
-        <p>O Assassino é um mestre da furtividade e do combate silencioso, capaz de eliminar seus alvos sem ser detectado.</p>
-        <h3>Habilidades:</h3>
-        <p><strong>Passiva:</strong> Mestre das Sombras - Aumenta o dano crítico em 30% quando atacando por trás.</p>
-        <p><strong>Ativa:</strong> Golpe Sombrio - Desfere um golpe mortal que causa dano extra e aplica sangramento no alvo.</p>
-    </div>
-</div>
 
-<!-- Seção do Paladino -->
-<div class="character-section">
-    <h2>Paladino</h2>
-    <div class="character-info">
-        <img src="./paladino.png" alt="Paladino">
-        <p><strong>Ouro:</strong> 1200</p>
-        <p><strong>Fama:</strong> 600</p>
+    <!-- Seção do Assassino -->
+    <div class="character-section">
+        <h2>Assassino</h2>
+        <div class="character-info">
+            <img src="./assassino.png" alt="Assassino">
+            <p><strong>Ouro:</strong> 800</p>
+            <p><strong>Fama:</strong> 300</p>
+        </div>
+        <div class="character-description">
+            <h3>Descrição:</h3>
+            <p>O Assassino é um mestre da furtividade e do combate silencioso, capaz de eliminar seus alvos sem ser detectado.</p>
+            <h3>Habilidades:</h3>
+            <p><strong>Passiva:</strong> Mestre das Sombras - Aumenta o dano crítico em 30% quando atacando por trás.</p>
+            <p><strong>Ativa:</strong> Golpe Sombrio - Desfere um golpe mortal que causa dano extra e aplica sangramento no alvo.</p>
+        </div>
     </div>
-    <div class="character-description">
-        <h3>Descrição:</h3>
-        <p>O Paladino é um guerreiro sagrado, dedicado à justiça e à proteção dos inocentes. Ele canaliza a luz divina para purificar o mal.</p>
-        <h3>Habilidades:</h3>
-        <p><strong>Passiva:</strong> Escudo Divino - Tem uma chance de bloquear completamente um ataque inimigo.</p>
-        <p><strong>Ativa:</strong> Martelo da Retribuição - Golpeia o solo com um martelo sagrado, causando dano em área e atordoando os inimigos.</p>
-    </div>
-</div>
 
-<!-- Seção do Ladino -->
-<div class="character-section">
-    <h2>Ladino</h2>
-    <div class="character-info">
-        <img src="/ladino.png" alt="Ladino">
-        <p><strong>Ouro:</strong> 700</p>
-        <p><strong>Fama:</strong> 250</p>
+    <!-- Seção do Paladino -->
+    <div class="character-section">
+        <h2>Paladino</h2>
+        <div class="character-info">
+            <img src="./paladino.png" alt="Paladino">
+            <p><strong>Ouro:</strong> 1200</p>
+            <p><strong>Fama:</strong> 600</p>
+        </div>
+        <div class="character-description">
+            <h3>Descrição:</h3>
+            <p>O Paladino é um guerreiro sagrado, dedicado à justiça e à proteção dos inocentes. Ele canaliza a luz divina para purificar o mal.</p>
+            <h3>Habilidades:</h3>
+            <p><strong>Passiva:</strong> Escudo Divino - Tem uma chance de bloquear completamente um ataque inimigo.</p>
+            <p><strong>Ativa:</strong> Martelo da Retribuição - Golpeia o solo com um martelo sagrado, causando dano em área e atordoando os inimigos.</p>
+        </div>
     </div>
-    <div class="character-description">
-        <h3>Descrição:</h3>
-        <p>O Ladino é um especialista em astúcia e agilidade, capaz de desarmar armadilhas e abrir fechaduras com facilidade.</p>
-        <h3>Habilidades:</h3>
-        <p><strong>Passiva:</strong> Reflexos Rápidos - Aumenta a esquiva em 25% quando desarmado.</p>
-        <p><strong>Ativa:</strong> Golpe Furtivo - Realiza um ataque sorrateiro que causa dano crítico e aplica veneno no alvo.</p>
-    </div>
-</div>
 
+    <!-- Seção do Ladino -->
+    <div class="character-section">
+        <h2>Ladino</h2>
+        <div class="character-info">
+            <img src="/ladino.png" alt="Ladino">
+            <p><strong>Ouro:</strong> 700</p>
+            <p><strong>Fama:</strong> 250</p>
+        </div>
+        <div class="character-description">
+            <h3>Descrição:</h3>
+            <p>O Ladino é um especialista em astúcia e agilidade, capaz de desarmar armadilhas e abrir fechaduras com facilidade.</p>
+            <h3>Habilidades:</h3>
+            <p><strong>Passiva:</strong> Reflexos Rápidos - Aumenta a esquiva em 25% quando desarmado.</p>
+            <p><strong>Ativa:</strong> Golpe Furtivo - Realiza um ataque sorrateiro que causa dano crítico e aplica veneno no alvo.</p>
+        </div>
+    </div>
+
+    <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
 </body>
 </html>
