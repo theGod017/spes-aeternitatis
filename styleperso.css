@@ -1,0 +1,84 @@
+/* Estilos para a barra de navegação */
+body {
+    font-family: 'Goudy Bookletter 1911', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2e9d4; /* Cor de fundo estilo pergaminho */
+    background-image: url('background_texture.jpg'); /* Textura de fundo estilo papel envelhecido */
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+nav {
+    background-color: #613613; /* Cor de fundo da barra de navegação */
+    overflow: hidden;
+    text-align: center; /* Centraliza os elementos */
+    padding: 10px 0;
+}
+
+nav a {
+    display: inline-block; /* Permite centralizar */
+    color: #f2e9d4; /* Cor do texto dos links */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    margin: 0 10px; /* Espaçamento entre os links */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+nav a:hover {
+    background-color: #fff; /* Cor de fundo ao passar o mouse */
+    color: #613613; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilos para as seções dos personagens */
+.character-section {
+    padding: 20px;
+    background-color: #fff; /* Cor de fundo das seções dos personagens */
+    margin: 20px auto; /* Centraliza as seções na página */
+    max-width: 800px; /* Largura máxima das seções */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+.character-section h2 {
+    color: #613613; /* Cor do título dos personagens */
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.character-section img {
+    max-width: 200px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+.character-info {
+    margin-bottom: 20px;
+}
+
+.character-info p {
+    color: #613613; /* Cor do texto das informações dos personagens */
+    font-size: 18px;
+}
+
+.character-description {
+    clear: both;
+}
+
+.character-description h3 {
+    color: #613613; /* Cor dos títulos das habilidades */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.character-description p {
+    color: #333; /* Cor do texto das habilidades */
+    font-size: 16px;
+    line-height: 1.6;
+}
