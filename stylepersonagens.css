@@ -1,0 +1,54 @@
+/* Estilos para a barra de navegação */
+nav {
+    background-color: #613613; /* Cor de fundo da barra de navegação */
+    overflow: hidden;
+    text-align: center; /* Centraliza os elementos */
+    padding: 10px 0;
+}
+
+nav a {
+    display: inline-block; /* Permite centralizar */
+    color: #f2e9d4; /* Cor do texto dos links */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    margin: 0 10px; /* Espaçamento entre os links */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+nav a:hover {
+    background-color: #fff; /* Cor de fundo ao passar o mouse */
+    color: #613613; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilos para os títulos das seções */
+.info-section h2 {
+    text-align: center;
+    color: #613613;
+    margin-top: 50px;
+}
+
+/* Estilos para o texto das seções */
+.info-section p {
+    color: #333;
+    font-size: 18px;
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 20px;
+    line-height: 1.5;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #613613;
+    color: #f2e9d4;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
