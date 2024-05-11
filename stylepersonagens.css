@@ -27,7 +27,14 @@ nav a {
     margin: 0 10px; /* Espaçamento entre os links */
     border-radius: 5px; /* Borda arredondada */
 }
-
+.character-section {
+    padding: 20px;
+    background-color: #fff; /* Cor de fundo das seções dos personagens */
+    margin: 20px auto; /* Centraliza as seções na página */
+    max-width: 800px; /* Largura máxima das seções */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    border-radius: 10px; /* Borda arredondada */
+}
 nav a:hover {
     background-color: #fff; /* Cor de fundo ao passar o mouse */
     color: #613613; /* Cor do texto ao passar o mouse */
@@ -42,13 +49,14 @@ nav a:hover {
 
 /* Estilos para o texto das seções */
 .info-section p {
-    color: #333;
     font-size: 18px;
     text-align: justify;
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 0 20px;
-    line-height: 1.5;
+    padding: 20px;
+    background-color: #fff; /* Cor de fundo das seções dos personagens */
+    margin: 20px auto; /* Centraliza as seções na página */
+    max-width: 800px; /* Largura máxima das seções */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    border-radius: 10px; /* Borda arredondada */
 }
 
 /* Estilos para o rodapé */
