@@ -1,3 +1,12 @@
+body {
+    font-family: 'Goudy Bookletter 1911', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2e9d4; /* Cor de fundo estilo pergaminho */
+    background-image: url('background_texture.jpg'); /* Textura de fundo estilo papel envelhecido */
+    background-size: cover;
+    background-blend-mode: multiply;
+}
 /* Estilos para a barra de navegação */
 nav {
     background-color: #613613; /* Cor de fundo da barra de navegação */
