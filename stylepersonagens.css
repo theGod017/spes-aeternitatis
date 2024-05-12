@@ -47,13 +47,14 @@ nav a:hover {
     margin-top: 50px;
 }
 .intro {
-    color: #ffffff;
+    color: #ff0000;
     font-size: 18px;
     text-align: center;
     max-width: 1100px;
     margin: 20px auto;
     background-color: #000000;
     box-shadow: 0 0 10px rgb(255, 255, 255);
+    border-radius: 10px;
 }
 /* Estilos para o texto das seções */
 .info-section p {
