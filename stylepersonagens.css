@@ -51,7 +51,6 @@ nav a:hover {
     color: #ff0000;
     text-align: justify;
     padding: 20px;
-    background-color: #000000; /* Cor de fundo das seções dos personagens */
     margin: 20px auto; /* Centraliza as seções na página */
     max-width: 1200px; /* Largura máxima das seções */
     box-shadow: 0 0 10px rgba(255, 0, 0, 0.616); /* Sombra */
