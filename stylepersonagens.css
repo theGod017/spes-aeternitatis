@@ -1,3 +1,4 @@
+/* Estilos para a barra de navegação */
 body {
     font-family: 'Goudy Bookletter 1911', serif;
     margin: 0;
@@ -7,7 +8,7 @@ body {
     background-size: cover;
     background-blend-mode: multiply;
 }
-/* Estilos para a barra de navegação */
+
 nav {
     background-color: #613613; /* Cor de fundo da barra de navegação */
     overflow: hidden;
@@ -27,6 +28,13 @@ nav a {
     margin: 0 10px; /* Espaçamento entre os links */
     border-radius: 5px; /* Borda arredondada */
 }
+
+nav a:hover {
+    background-color: #fff; /* Cor de fundo ao passar o mouse */
+    color: #613613; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilos para as seções dos personagens */
 .character-section {
     padding: 20px;
     background-color: #fff; /* Cor de fundo das seções dos personagens */
@@ -35,45 +43,42 @@ nav a {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
     border-radius: 10px; /* Borda arredondada */
 }
-nav a:hover {
-    background-color: #fff; /* Cor de fundo ao passar o mouse */
-    color: #613613; /* Cor do texto ao passar o mouse */
+
+.character-section h2 {
+    color: #613613; /* Cor do título dos personagens */
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
-/* Estilos para os títulos das seções */
-.info-section h2 {
-    text-align: center;
-    color: #613613;
-    margin-top: 50px;
+.character-section img {
+    max-width: 200px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
 }
-.intro {
-    font-size: 20px;
-    color: #ff0000;
-    text-align: justify;
-    padding: 20px;
-    margin: 20px auto; /* Centraliza as seções na página */
-    max-width: 1200px; /* Largura máxima das seções */
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.616); /* Sombra */
-    border-radius: 10px; /* Borda arredondada */
+
+.character-info {
+    margin-bottom: 20px;
 }
-/* Estilos para o texto das seções */
-.info-section p {
+
+.character-info p {
+    color: #613613; /* Cor do texto das informações dos personagens */
     font-size: 18px;
-    text-align: justify;
-    padding: 20px;
-    background-color: #fff; /* Cor de fundo das seções dos personagens */
-    margin: 20px auto; /* Centraliza as seções na página */
-    max-width: 800px; /* Largura máxima das seções */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
-    border-radius: 10px; /* Borda arredondada */
 }
 
-/* Estilos para o rodapé */
-footer {
-    background-color: #613613;
-    color: #f2e9d4;
-    text-align: center;
-    padding: 20px 0;
-    bottom: 0;
-    width: 100%;
+.character-description {
+    clear: both;
+}
+
+.character-description h3 {
+    color: #613613; /* Cor dos títulos das habilidades */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.character-description p {
+    color: #333; /* Cor do texto das habilidades */
+    font-size: 16px;
+    line-height: 1.6;
 }
