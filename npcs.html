@@ -5,21 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPES AETERNITATIS - NPCs</title>
     <link rel="stylesheet" type="text/css" href="./stylenpc.css">
-    <style>
-        /* Adicionei estilos para o resultado da rolagem de dados */
-        #dice-result {
-            font-size: 24px;
-            margin-top: 20px;
-        }
 
-        /* Estilos para centralizar elementos */
-        .center-container {
-            text-align: center;
-            margin: auto;
-            max-width: 800px;
-            margin-top: 20px; /* Espaço adicional no topo */
-        }
-    </style>
 </head>
 <body>
     <nav>
@@ -35,74 +21,82 @@
     </div>
 
     <!-- Tabela dos NPCs -->
-    <div class="center-container">
-        <div class="npc-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Foto</th>
-                        <th>Nome</th>
-                        <th>Profissão</th>
-                        <th>Localização</th>
-                        <th>Descrição</th>
-                    </tr>
-                </thead>
-                <tbody style="align-items: center;">
-                    <!-- NPC 1: Mercador -->
-                    <tr>
-                        <td><img src="./mercador.jpg" alt="Mercador"></td>
-                        <td>Felipe, o Mercador</td>
-                        <td>Mercador ambulante</td>
-                        <td>Principais cidades e vilarejos</td>
-                        <td>Felipe viaja de cidade em cidade vendendo uma variedade de itens, desde poções até armas.</td>
-                    </tr>
+    <div class="npc-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Foto</th>
+                    <th>Nome</th>
+                    <th>Profissão</th>
+                    <th>Localização</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody style="align-items: center;">
+                <div class="dice-container" style="align-items: center;">
+                    <div class="dice" id="dice"><span id="dice-number"></span></div>
+                </div><p>
+                <button class="roll-button"onclick="rollDice(20)">1d20</button>
+                <button class="roll-button"onclick="rollDice(12)">1d12</button>
+                <button class="roll-button"onclick="rollDice(10)">1d10</button>
+                <button class="roll-button"onclick="rollDice(8)">1d8</button>
+                <button class="roll-button"onclick="rollDice(5)">1d5</button>
+                <button class="roll-button"onclick="rollDice(2)">1d2</button>
+            
+                <!-- NPC 1: Mercador -->
+                <tr>
+                    <td><img src="./mercador.jpg" alt="Mercador"></td>
+                    <td>Felipe, o Mercador</td>
+                    <td>Mercador ambulante</td>
+                    <td>Principais cidades e vilarejos</td>
+                    <td>Felipe viaja de cidade em cidade vendendo uma variedade de itens, desde poções até armas.</td>
+                </tr>
 
-                    <!-- NPC 2: Criança -->
-                    <tr>
-                        <td><img src="./crianca.jpg" alt="Criança"></td>
-                        <td>Ana, a Órfã</td>
-                        <td>Criança</td>
-                        <td>Orfanato da Cidade de Pedra</td>
-                        <td>Ana é uma órfã que vive no orfanato da cidade. Ela sonha em se tornar uma grande aventureira.</td>
-                    </tr>
+                <!-- NPC 2: Criança -->
+                <tr>
+                    <td><img src="./crianca.jpg" alt="Criança"></td>
+                    <td>Ana, a Órfã</td>
+                    <td>Criança</td>
+                    <td>Orfanato da Cidade de Pedra</td>
+                    <td>Ana é uma órfã que vive no orfanato da cidade. Ela sonha em se tornar uma grande aventureira.</td>
+                </tr>
 
-                    <!-- NPC 3: Ferreiro -->
-                    <tr>
-                        <td><img src="./ferreiro.jpg" alt="Ferreiro"></td>
-                        <td>Gustavo, o Ferreiro</td>
-                        <td>Ferreiro</td>
-                        <td>Forja do Ferreiro na Montanha do Trovão</td>
-                        <td>Gustavo é um ferreiro habilidoso que forja armas e armaduras de alta qualidade.</td>
-                    </tr>
+                <!-- NPC 3: Ferreiro -->
+                <tr>
+                    <td><img src="./ferreiro.jpg" alt="Ferreiro"></td>
+                    <td>Gustavo, o Ferreiro</td>
+                    <td>Ferreiro</td>
+                    <td>Forja do Ferreiro na Montanha do Trovão</td>
+                    <td>Gustavo é um ferreiro habilidoso que forja armas e armaduras de alta qualidade.</td>
+                </tr>
 
-                    <!-- NPC 4: Vilão -->
-                    <tr>
-                        <td><img src="./vilao.jpg" alt="Vilão"></td>
-                        <td>Lorde Sombrio Malakar</td>
-                        <td>Vilão</td>
-                        <td>Fortaleza Negra, nas Terras Sombrias</td>
-                        <td>Malakar é um poderoso feiticeiro que busca dominar o mundo com suas forças malignas.</td>
-                    </tr>
+                <!-- NPC 4: Vilão -->
+                <tr>
+                    <td><img src="./vilao.jpg" alt="Vilão"></td>
+                    <td>Lorde Sombrio Malakar</td>
+                    <td>Vilão</td>
+                    <td>Fortaleza Negra, nas Terras Sombrias</td>
+                    <td>Malakar é um poderoso feiticeiro que busca dominar o mundo com suas forças malignas.</td>
+                </tr>
 
-                    <!-- Adicione mais NPCs conforme necessário -->
+                <!-- Adicione mais NPCs conforme necessário -->
 
-                </tbody>
-            </table>
-        </div>
-
-        <!-- Botões para rolar dados bonitos -->
-        <div id="dice-buttons">
-            <button onclick="rollDice(20)">1d20</button>
-            <button onclick="rollDice(12)">1d12</button>
-            <button onclick="rollDice(10)">1d10</button>
-            <button onclick="rollDice(8)">1d8</button>
-            <button onclick="rollDice(5)">1d5</button>
-            <button onclick="rollDice(2)">1d2</button>
-        </div>
-
-        <!-- Div para mostrar o resultado da rolagem de dados -->
-        <div id="dice-result"></div>
+            </tbody>
+        </table>
     </div>
+
+    <!-- Botões para rolar dados bonitos -->
+    <div id="dice-buttons">
+        <button onclick="rollDice(20)">1d20</button>
+        <button onclick="rollDice(12)">1d12</button>
+        <button onclick="rollDice(10)">1d10</button>
+        <button onclick="rollDice(8)">1d8</button>
+        <button onclick="rollDice(5)">1d5</button>
+        <button onclick="rollDice(2)">1d2</button>
+    </div>
+
+    <!-- Div para mostrar o resultado da rolagem de dados -->
+    <div id="dice-result"></div>
 
     <script>
         function rollDice(max) {
