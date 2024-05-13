@@ -95,8 +95,7 @@ td img {
 }
 
 .roll-button {
-    margin-top: 20px;
-    padding: 10px 20px;
+    align-items: center;
     font-size: 18px;
     background-color: #4CAF50;
     color: #fff;
