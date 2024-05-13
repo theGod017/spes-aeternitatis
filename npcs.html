@@ -93,12 +93,20 @@
 
     <!-- Div para mostrar o resultado da rolagem de dados -->
     <div id="dice-result"></div>
-
     <script>
         function rollDice(max) {
             var result = Math.floor(Math.random() * max) + 1;
             document.getElementById("dice-result").innerText = "Resultado: " + result;
+            
+            // Adiciona a classe de animação por um curto período
+            var resultDiv = document.getElementById("dice-result");
+            resultDiv.classList.add("roll");
+            setTimeout(function(){
+                resultDiv.classList.remove("roll");
+            }, 500); // A duração da animação é de 0,5 segundos (500 milissegundos)
         }
     </script>
+    
+
 </body>
 </html>

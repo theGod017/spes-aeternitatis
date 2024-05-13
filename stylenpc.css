@@ -74,3 +74,32 @@ td img {
     max-width: 100px;
     max-height: 100px;
 }
+/* Estilos para os botões de rolar dados */
+.dice-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dice-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para a animação de rolagem de dados */
+@keyframes rollAnimation {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-20deg); }
+    50% { transform: rotate(20deg); }
+    75% { transform: rotate(-20deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.roll {
+    animation: rollAnimation 0.5s ease-in-out;
+}
