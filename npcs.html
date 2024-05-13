@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPES AETERNITATIS - NPCs</title>
     <link rel="stylesheet" type="text/css" href="./stylenpc.css">
-
+    <style>
+        /* Adicionei estilos para o resultado da rolagem de dados */
+        #dice-result {
+            font-size: 24px;
+            margin-top: 20px;
+            text-align: center; /* Centraliza o resultado */
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -32,17 +39,7 @@
                     <th>Descrição</th>
                 </tr>
             </thead>
-            <tbody style="align-items: center;">
-                <div class="dice-container" style="align-items: center;">
-                    <div class="dice" id="dice"><span id="dice-number"></span></div>
-                </div><p>
-                <button class="roll-button"onclick="rollDice(20)">1d20</button>
-                <button class="roll-button"onclick="rollDice(12)">1d12</button>
-                <button class="roll-button"onclick="rollDice(10)">1d10</button>
-                <button class="roll-button"onclick="rollDice(8)">1d8</button>
-                <button class="roll-button"onclick="rollDice(5)">1d5</button>
-                <button class="roll-button"onclick="rollDice(2)">1d2</button>
-            
+            <tbody>
                 <!-- NPC 1: Mercador -->
                 <tr>
                     <td><img src="./mercador.jpg" alt="Mercador"></td>
@@ -86,13 +83,13 @@
     </div>
 
     <!-- Botões para rolar dados bonitos -->
-    <div id="dice-buttons">
-        <button onclick="rollDice(20)">1d20</button>
-        <button onclick="rollDice(12)">1d12</button>
-        <button onclick="rollDice(10)">1d10</button>
-        <button onclick="rollDice(8)">1d8</button>
-        <button onclick="rollDice(5)">1d5</button>
-        <button onclick="rollDice(2)">1d2</button>
+    <div id="dice-buttons" style="text-align: center; margin-top: 20px;">
+        <button class="roll-button" onclick="rollDice(20)">1d20</button>
+        <button class="roll-button" onclick="rollDice(12)">1d12</button>
+        <button class="roll-button" onclick="rollDice(10)">1d10</button>
+        <button class="roll-button" onclick="rollDice(8)">1d8</button>
+        <button class="roll-button" onclick="rollDice(5)">1d5</button>
+        <button class="roll-button" onclick="rollDice(2)">1d2</button>
     </div>
 
     <!-- Div para mostrar o resultado da rolagem de dados -->
